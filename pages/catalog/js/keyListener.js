@@ -1,4 +1,4 @@
-const keysContainer = document.querySelector("#keys-container");
+const keysContainer = document.querySelector("#key-listener-container > #preview");
 
 document.addEventListener("keydown", (e) => {
     const pressedKey = document.createElement("div");
