@@ -267,6 +267,32 @@
                         </div>
                     </div>
                 </div>
+
+                <div
+                    class="w-full h-[2px] bg-[#000000cc]/25"
+                    id="separator"
+                ></div>
+
+                <div class="flex flex-col gap-[10px]" id="cursor-stalker-container">
+                    <div id="desc">
+                        <h1
+                            class="font-bold text-[32px] bg-transparent transition-colors"
+                        >
+                            Cursor stalker
+                        </h1>
+                        <p>
+                            Just for fun component that stalking your cursor.
+                        </p>
+                    </div>
+
+                    <div
+                        class="relative gap-[50px] max-w-full h-[500px] rounded-[10px] border-2 border-[#000000cc]/25 bg-white overflow-hidden"
+                        id="stalking-preview"
+                    >
+                        <div class="w-full absolute h-[2px] bg-[#000000cc]/0 transition-colors" id="x-line"></div>
+                        <div class="h-full absolute w-[2px] bg-[#000000cc]/0 transition-colors" id="y-line"></div>
+                    </div>
+                </div>
             </div>
         </main>
 
@@ -275,5 +301,6 @@
         <script type="module" src="js/keyListener.js"></script>
         <script type="module" src="js/accordion.js"></script>
         <script type="module" src="js/slider.js"></script>
+        <script type="module" src="js/cursorStalking.js"></script>
     </body>
 </html>
