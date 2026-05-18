@@ -236,28 +236,18 @@
                     </div>
 
                     <div
-                        class="flex flex-col justify-center items-center gap-[50px] max-w-full h-[200px] rounded-[10px] border-2 border-[#000000cc]/25 p-[24px] bg-white"
+                        class="flex flex-col justify-center items-center gap-[50px] max-w-full h-[650px] rounded-[10px] border-2 border-[#000000cc]/25 p-[24px] bg-white"
                         id="preview"
                     >
-                        <div
-                            id="slider"
-                            class="flex items-center relative h-[10px] w-[400px] bg-[#000000cc]/25 rounded-[10px]"
-                        >
-                            <div
-                                id="dot"
-                                class="flex flex-col items-center absolute -translate-x-1/2 h-[20px] w-[20px] bg-[#000000cc] rounded-full outline-solid outline-0 outline-[#000000cc]/25 hover:outline-5"
-                            >
-                                <p
-                                    id="percentage"
-                                    class="mt-[25px] select-none"
-                                >
-                                    0
-                                </p>
-                            </div>
-                        </div>
+                        <img
+                            src="https://picsum.photos/400?random=5"
+                            alt="Random image"
+                            height="0px"
+                            id="slider-image"
+                        />
 
                         <div
-                            id="slider-fixed"
+                            id="slider"
                             class="flex items-center relative h-[10px] w-[400px] bg-[#000000cc]/25 rounded-[10px]"
                         >
                             <div
@@ -280,24 +270,31 @@
                     id="separator"
                 ></div>
 
-                <div class="flex flex-col gap-[10px]" id="cursor-stalker-container">
+                <div
+                    class="flex flex-col gap-[10px]"
+                    id="cursor-stalker-container"
+                >
                     <div id="desc">
                         <h1
                             class="font-bold text-[32px] bg-transparent transition-colors"
                         >
                             Cursor stalker
                         </h1>
-                        <p>
-                            Just for fun component that stalking your cursor.
-                        </p>
+                        <p>Just for fun component that stalking your cursor.</p>
                     </div>
 
                     <div
                         class="relative gap-[50px] max-w-full h-[500px] rounded-[10px] border-2 border-[#000000cc]/25 bg-white overflow-hidden"
                         id="stalking-preview"
                     >
-                        <div class="w-full absolute h-[2px] bg-[#000000cc]/0 transition-colors" id="x-line"></div>
-                        <div class="h-full absolute w-[2px] bg-[#000000cc]/0 transition-colors" id="y-line"></div>
+                        <div
+                            class="w-full absolute h-[2px] bg-[#000000cc]/0 transition-colors"
+                            id="x-line"
+                        ></div>
+                        <div
+                            class="h-full absolute w-[2px] bg-[#000000cc]/0 transition-colors"
+                            id="y-line"
+                        ></div>
                     </div>
                 </div>
             </div>
